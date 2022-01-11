@@ -1,0 +1,131 @@
+:root{
+    --rb:#000814;
+    --oxb:#001D3D;
+    --prb:#003566;
+    --mkdy:#f8cc3d;
+    --mkdy2:#f3c52c;
+    --gwg:#FFD60A;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+body{
+    animation-name: bg;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg{
+    0%{background-color: var(--oxb); }
+    50%{background-color:var(--rb); }
+    100%{background-color: var(--oxb);}
+}
+
+#calculator{
+    width: 400px;
+    height: 500px;
+    background-color: var(--prb);
+    margin:80px auto;
+}
+
+#clear{
+    background-color: tomato;
+}
+
+.symbol{
+    color: rgb(20, 40, 41);
+    font-weight: bold;
+}
+
+.input_area{
+    height: 100px;
+}
+.buttons, .input_area{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.buttons{ 
+    height: 380px;
+}
+.numbers{
+    width: 300px;
+    height: 368px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.math_functions{
+    width: 70px;
+    height: 369px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:stretch;
+}
+
+#inp{
+    width: 350px;
+    height: 70px;
+    background-color: #ADD8FF;
+    margin:10px auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    font-weight: bold;
+}
+
+.number, .ecual{
+    height: 90px;
+    background-color: var(--oxb);
+    margin-right:2px;
+    color: #acacac;
+    font-size: 50px;
+    text-align: center;
+    line-height: 1.7em;
+    cursor: pointer;
+}
+.number{
+    width: 98px;
+    transition: all 0.2s linear ;
+}
+.number:hover{
+    text-shadow:0 0 30px #67aff3,
+                0 0 40px #67aff3;
+    background-color:#01152b;
+    color: skyblue;
+}
+.ecual{
+    width: 198px;
+    background-color: var(--mkdy);
+    color: black;
+    transition: all 0.2s linear ;
+}
+.ecual:hover{
+    background-color: #e4ba30;
+    box-shadow:0px 0px  30px  #4b3901  inset;
+}
+.mf{
+    width: 65px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gwg);
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+}
+
+.mf:hover{
+    font-size: 30px;
+    font-weight: bold;
+    box-shadow:0px 0px  30px  #4b3901  inset;
+
+}
